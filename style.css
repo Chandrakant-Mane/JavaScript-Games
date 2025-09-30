@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+.main {
+  background-image: url("assets/bg.png");
+  background-position: center center;
+  background-size: max(2000px, 100vw);
+  background-repeat: no-repeat;
+  height: 644px;
+  position: relative;
+}
+
+.main .box {
+  height: 644px;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 60vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  z-index: 10;
+  position: relative;
+}
+nav > div {
+  height: 60%;
+  width: 100%;
+  /* background-color: black; */
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid white;
+  /* background-color: black; */
+  /* z-index: 10;
+  position: relative; */
+}
+
+.right ul {
+  display: flex;
+  gap: 50px;
+}
+
+.right ul li a {
+  text-decoration: none;
+  color: white;
+}
+.right ul li {
+  display: flex;
+}
+
+.logo img {
+  width: 165px;
+}
+
+.logo {
+  width: 30%;
+  margin-left: 30px;
+  position: relative;
+}
+
+.right ul li:last-child {
+  margin-right: 30px;
+}
+
+/* nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+} */
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 103px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.separation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+  position: relative;
+  z-index: 20;
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.main input {
+  padding: 7px 101px 8px 14px;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 500px; */
+  gap: 100px;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  /* position: absolute; */
+  object-position: center center;
+  /* top: 51px;
+            right: 0; */
+  width: 555px;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #aaeee3;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 24px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: none; */
+  font-family: "Roboto", sans-serif;
+}
+
+/* body {
+            background-color: rgb(37, 37, 37);
+            background-size: cover;
+            height: 100vh;
+        } */
+
+.wrapper {
+  /* position: absolute;
+            top: 50%;
+            left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  margin: 20px auto;
+  width: 100%;
+  max-width: 550px;
+  background: rgba(19, 18, 18, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper .title h1 {
+  color: #c5ecfd;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+.msg textarea {
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c5ecfd;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c5ecfd;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #c5ecfd;
+}
+
+.btnC {
+  background: #39b7dd;
+  text-align: center;
+  margin: 15px auto;
+  padding: 10px 12px;
+  width: 30%;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .right {
+    margin: auto;
+  }
+
+  .right ul li:first-child {
+    margin-left: 30px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .msg textarea {
+    height: 80px;
+  }
+
+  .input-fields,
+  .msg {
+    width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
+
+.footer {
+  /* background-color: #1a1818; */
+  /* background: linear-gradient(135deg, #8a2be2, #4169e1); */
+  /* border: 2px solid white; */
+  background-color: #1b1b1b;
+  width: 60vw;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+
+.socialicon {
+  display: flex;
+  justify-content: center;
+}
+
+.socialicon a {
+  text-decoration: none;
+  padding: 10px;
+  /* background-color: rgb(0, 0, 0); */
+  background-color: #1b1b1b;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialicon a i {
+  font-size: 2em;
+  color: gray;
+  /* color:linear-gradient(135deg, #8a2be2, #4169e1); */
+  opacity: 0.9;
+}
+
+/* Hover Effects on Social Media Icons  */
+.socialicon a:hover {
+  /* background-color: #111; */
+  /* color: linear-gradient(135deg, #8a2be2, #4169e1);; */
+  background: linear-gradient(135deg, #8a2be2, #4169e1);
+  transition: 0.5s;
+}
+
+.socialicon a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footerBottom {
+  /* background-color: #181616; */
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  color: white;
+}
+
+.designer {
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0 5px;
+}
+
+.head {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+
+  .first {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* justify-content: center;
+        align-items: ; */
+    gap: 0;
+  }
+
+  .secImg img {
+    width: 305px;
+  }
+
+  .secImg video {
+    width: 305px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 32px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .faq h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  /* .footer {
+                max-width: 100vw;
+                padding: 75px 0;
+            } */
+
+  .footer-item {
+    align-items: center;
+  }
+}

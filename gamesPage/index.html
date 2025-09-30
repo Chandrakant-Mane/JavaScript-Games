@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            font-style: "Poppins";
+        }
+
+        .header {
+            /* background-color: #1a1a1a; */
+            background: linear-gradient(135deg, #8a2be2, #4169e1);
+            height: 100px;
+            color: white;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px
+        }
+
+        .second {
+            max-width: 90vw;
+            margin: 30px auto;
+        }
+
+        .box {
+            padding: 15px;
+            /* background: #555454; */
+            background: linear-gradient(135deg, #8a2be2, #4169e1);
+            border-radius: 25px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            opacity: 0.60;
+        }
+
+        .box:hover {
+            opacity: 1;
+        }
+
+        /* .box1 , .box2 ,.box3{
+            opacity: 0.6;
+        } */
+
+        .box video {
+            width: 100%;
+            border-radius: 15px;
+            /* animation-play-state: running; */
+            /* opacity: 0.60; */
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .box a span {
+            /* border: 1px solid white;
+            padding: 2px 5px;
+            border-radius: 5px;
+            background-color: rgb(61, 60, 60); */
+            padding: 0.5rem;
+            background-color: #8a2be2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .separation {
+            height: 7px;
+            background-color: rgb(65, 62, 62);
+            position: relative;
+            z-index: 20;
+        }
+
+        .box video:hover {
+            opacity: 1;
+        }
+
+
+        .box4 {
+            background: linear-gradient(135deg, #8a2be2, #4169e1);
+            height: 300px;
+
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="email"] {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            padding: 0.5rem;
+            background-color: #8a2be2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #7a1dd1;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .box div {
+            color: #ffffff;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 10;
+        }
+
+        input[type="email"] {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 1rem;
+            width: 60%;
+            margin: 1rem auto;
+        }
+
+        button {
+            /* padding: ; */
+            width: 50%;
+            margin: auto;
+            background-color: #8a2be2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #7a1dd1;
+        }
+
+        .contribute {
+            border: 1px solid white;
+            /* height: 50px  ; */
+            width: 90vw;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #8a2be2, #4169e1);
+        }
+
+        .contribute p {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+        }
+
+        @media screen and ( max-width: 1145px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="header"><span>Games</span></div>
+
+    <div class="separation"></div>
+
+    <section class="second">
+        <div class="container">
+            <a href="/Games/flappy-bird-master/index.html" target="_blank">
+                <div class="box box1">
+                    <video src="Untitled video - Made with Clipchamp (1).mp4" muted loop></video>
+                    <button class="name"> Flappy Bird</button>
+                </div>
+            </a>
+            <a href="/Games/SnakeGame/index.html" target="_blank">
+                <div class="box">
+                    <video src="/Videos/snake.mp4" loop muted></video>
+                    <button class="name">Snake</button>
+                </div>
+            </a>
+            <a href="/Games/tic tac toe/index.html" target="_blank">
+                <div class="box">
+                    <video src="/Videos/tictaktoe.mp4" loop muted></video>
+                    <button class="name">Tic Tac Toe</button>
+                </div>
+            </a>
+            <div class="box box4">
+                <h1>Coming Soon...</h1>
+                <div>We're working hard to bring something amazing .</div>
+                <div>stay tuned!</div>
+                <form id="notify-form">
+                    <input type="email" placeholder="Enter your email" required />
+                    <button type="submit">Notify Me</button>
+                </form>
+            </div>
+            <div class="box box5">
+                <h1>Coming Soon...</h1>
+                <div>We're working hard to bring something amazing .</div>
+                <div>stay tuned!</div>
+                <form id="notify-form">
+                    <input type="email" placeholder="Enter your email" required />
+                    <button type="submit">Notify Me</button>
+                </form>
+            </div>
+            <div class="box box6">
+                <h1>Coming Soon...</h1>
+                <!-- <p>We're working hard to bring something amazing .</p> -->
+                <div>We're working hard to bring something amazing .</div>
+                <div>stay tuned!</div>
+
+                <!-- <p>stay tuned!</p> -->
+                <form id="notify-form">
+                    <input type="email" placeholder="Enter your email" required />
+                    <button type="submit">Notify Me</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <div class="contribute">
+        <p>Have ideas or want to help us grow? We welcome your contributions! Reach out to us and be part of our
+            journey.</p>
+    </div>
+    <div class="separation"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
